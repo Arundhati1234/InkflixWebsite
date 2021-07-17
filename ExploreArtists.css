@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+html,body{
+    margin: 0;
+    padding:0;
+    background-color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+    overflow-x: hidden;
+}
+
+
+#logo{
+    height: 30px;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    background-color: black;
+    height: 70px;
+}
+
+.nav{
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+
+
+.explore, .profile {
+    position: relative;
+}
+
+.explore-content, .profile-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 1px 0px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.explore-content a, .profile-content a{
+    background-color: white;
+    border-bottom: 1px solid gray;
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    font-size: 13px;
+}
+
+.explore-content a:hover, .profile-content a:hover{
+    color: white;
+    background-color: black;
+}
+
+.explore button:focus + .explore-content, .profile button:focus + .profile-content{
+    display: flex;
+}
+
+
+/**************LANDING PAGE STYLING***************/
+
+.nav button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    cursor: pointer;
+}
+
+.buttons:hover{
+    background-color: red;
+    transition: 0.5s ease;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-text{
+    width: 90px;
+    padding: 7px 5px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    float: left;
+}
+
+.search-text::placeholder{
+    color: white;
+}
+
+.arrow-down{
+    height: 10px;
+}
+
+.profile .img-buttons{
+    height: 35px;
+}
+
+.search .img-buttons{
+    height: 20px;
+    padding: 4px;
+    float: right;
+}
+
+.img-buttons:hover{
+    border: red solid 2px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.main-container h2{
+    color: white;
+    align-self: center;
+    font-size: 30px;
+}
+
+
+/********************************************/
+
+.artists{
+    align-self: center;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: gray;
+}
+
+.artists-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.artists h2{
+    color: black;
+    margin-left: 15px;
+}
+
+.artist-buttons{
+    float: right;
+    margin: 30px 30px;
+}
+
+.artist-btn{
+    padding: 10px 12px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-right: 15px;
+    
+  }
+  
+  .artist-btn:hover{
+    color: white;
+    background-color: black;  
+    transition: 0.5s ease;
+  }
+
+  /***********CARDS**************/
+
+  .artist-pic{
+      height: 150px;
+      width: auto;
+      border-radius: 10px;
+  }
+
+
+
+a{
+    text-decoration: none;
+}
+
+  .artist-cards{
+      display: flex;    
+      flex-wrap: wrap;
+  }
+
+  .card{
+      flex-basis: 30%;
+      margin: 0 20px 20px 0;
+      text-align: center;
+      padding-top: 20px;
+  }
+
+  .card-body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .card .artist-btn{
+      padding: 7px 12px;
+      font-size: 12px;
+      text-decoration: none;
+  }
+
+  .card-text{
+      text-align: center;
+  }
+
+
+  /********FOOTER**************/
+
+  .footer{
+    background-color: rgb(41, 38, 38);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 30px;
+}
+
+.footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li{
+    margin-top: 13px;
+}
+
+.footer li a{
+    text-decoration: none;
+    color: white; 
+}
+
+.footer li a:hover{
+    color: rgb(160, 156, 156);
+}
+
+.explore-div, .company-div{
+    flex: 1;
+}
+
+.legal-div, .artist-div{
+    flex: 1.4;
+}
+
+.join-us{
+    font-size: 20px;
+}
+
+.get-started-btn{
+    padding: 10px 12px;
+    border-radius: 20px;
+    background-color: rgb(53, 51, 51);
+    border: 2px solid white;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    
+  }
+  
+  .get-started-btn:hover{
+    color:rgb(53, 51, 51);
+    background-color: white;  
+    transition: 0.5s ease;
+  }
